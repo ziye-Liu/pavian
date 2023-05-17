@@ -25,7 +25,7 @@ dashboardUI <- function(request) {
                                 #tags$li(class = "dropdown",
                                 #          tags$a(href="http://twitter.com/share?url=http://ccb.jhu.edu/software/pavian&amp;text=Explore metagenomics data with #pavian ", target="_blank", tags$img(icon('twitter')))),
                                 tags$li(class = "dropdown",
-                                        tags$a(href="http://github.com/fbreitwieser/pavian", target="_blank", tags$img(icon('github'))))
+                                        tags$a(href="https://github.com/fbreitwieser/pavian", target="_blank", tags$img(icon('github'))))
                 ),
                 dashboardSidebar(
                   div(class="hide_when_sidebar_collapsed",
@@ -42,7 +42,7 @@ dashboardUI <- function(request) {
                                                       selectize = FALSE, size = 5))),
                       # The following menus are just displayed when a sample set has been loaded
                       shinydashboard::menuItem("Results Overview", tabName="Overview", icon = icon("table")),
-                      shinydashboard::menuItem("Sample", tabName="Sample", icon = icon("sun-o")),
+                      shinydashboard::menuItem("Sample", tabName="Sample", icon = icon("sun")),
                       shinydashboard::menuItem("Comparison", icon = icon("line-chart"), tabName = "Comparison"),
                                                #shinydashboard::menuSubItem("All data", tabName="Comparison"),
                                                #actionLink("show_bacteria","Bacteria and Archaea", tabName="Bacteria")
